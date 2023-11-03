@@ -115,12 +115,9 @@ git commit -m "Create getAverage function"
 ```bash
 git push -u origin getAverage-feature
 ```
-16. Now, we want to merge the branch `getAverage-feature` to the master branch:
+16. Now, Switch to the master to create new branch for new feature:
 ```bash
 git checkout master
-git pull origin master
-git merge getAverage-feature
-git push origin master
 ```
 17. Now, Create a new branch to add new feature which is getMin and push the new branch to the remote repository:
 ```bash
@@ -153,10 +150,30 @@ git commit -m "Create getMin function"
 ```bash
 git push -u origin getMin-feature
 ```
-22. Now, we want to merge the branch `getMin-feature` to the master branch:
+22. Now, we want to merge the branch `getAverage-feature` to the master branch:
+```bash
+git checkout master
+git pull origin master
+git merge getAverage-feature
+git push origin master
+```
+23. Now, we want to merge the branch `getMin-feature` to the master branch:
 ```bash
 git checkout master
 git pull origin master
 git merge getMin-feature
+git push origin master
+```
+23. Conflicts happend and I solved it on vs code which is very helpful but its file with any text editor
+24. Afer solving the conflicts, Stage the files:
+```bash
+git add .
+```
+25. Commit the changes:
+```bash
+git commit -m "Solve conflicts due merge getMin-feature branch into master branch"
+```
+26. Push the changes to the remote repository:
+```bash
 git push origin master
 ```
