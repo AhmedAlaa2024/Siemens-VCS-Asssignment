@@ -115,3 +115,9 @@ git commit -m "Create getAverage function"
 ```bash
 git push -u origin getAverage-feature
 ```
+16. Now, we want to merge the branch `getAverage-feature` to the master branch:
+```bash
+git checkout master
+git pull origin master
+git merge getAverage-feature
+```
