@@ -141,22 +141,22 @@ int getMin(vector<int> &arr) {
   return min;
 }
 ```
-13. Stage the changes
+19. Stage the changes
 ```bash
 git add assignemt.cpp
 ```
-14. Commit the changes on the stage
+20. Commit the changes on the stage
 ```bash
-git commit -m "Create getAverage function"
+git commit -m "Create getMin function"
 ```
-15. Push the commit to branch `getAverage-feature` on the remote repository
+21. Push the commit to branch `getMin-feature` on the remote repository
 ```bash
-git push -u origin getAverage-feature
+git push -u origin getMin-feature
 ```
-16. Now, we want to merge the branch `getAverage-feature` to the master branch:
+22. Now, we want to merge the branch `getMin-feature` to the master branch:
 ```bash
 git checkout master
 git pull origin master
-git merge getAverage-feature
+git merge getMin-feature
 git push origin master
 ```
