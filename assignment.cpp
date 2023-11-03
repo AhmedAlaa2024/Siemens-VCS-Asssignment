@@ -4,6 +4,7 @@
 using namespace std;
 
 long getSum(vector<int> &arr);
+int getAverage(vector<int> &arr);
 
 int main() {
   // Make the random numbers different each time
@@ -22,6 +23,12 @@ int main() {
   // Print the sum
   cout << "Sum: " << sum << endl;
 
+  // Calculate the average of the array
+  int average = getAverage(arr);
+
+  // Print the average
+  cout << "Average: " << average << endl;
+
 }
 
 long getSum(vector<int> &arr) {
@@ -32,4 +39,11 @@ long getSum(vector<int> &arr) {
   }
 
   return sum;
+}
+
+int getAverage(vector<int> &arr) {
+  long sum = getSum(arr);
+  int average = sum / arr.size();
+
+  return average;
 }
