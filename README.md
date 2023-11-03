@@ -43,3 +43,20 @@ assignment.o: assignment.cpp
 clean:
 	@rm -f assignment assignment.o
 ```
+8. Stage the changes
+```bash
+git add assignemt.cpp
+```
+9. Commit the changes on the stage
+```bash
+git commit -m "Create getSum function"
+```
+10. Push the commit on the remote repository
+```bash
+git push origin master
+```
+11. Create a new branch to add new feature which is getAverage and push the new branch to the remote repository:
+```bash
+git checkout -b getAverage-feature
+git push origin getAverage-feature
+```
