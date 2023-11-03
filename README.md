@@ -109,9 +109,9 @@ git add assignemt.cpp
 ```
 14. Commit the changes on the stage
 ```bash
-git commit -m "Create getSum function"
+git commit -m "Create getAverage function"
 ```
 15. Push the commit to branch `getAverage-feature` on the remote repository
 ```bash
-git push origin -u getAverage-feature
+git push -u origin getAverage-feature
 ```
