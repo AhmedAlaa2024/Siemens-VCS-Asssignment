@@ -120,4 +120,43 @@ git push -u origin getAverage-feature
 git checkout master
 git pull origin master
 git merge getAverage-feature
+git push origin master
+```
+17. Now, Create a new branch to add new feature which is getMin and push the new branch to the remote repository:
+```bash
+git checkout -b getMin-feature
+git push origin getMin-feature
+```
+18. Add the new feature on branch `getMin-feature`:
+```c++
+int getMin(vector<int> &arr) {
+  int min = arr[0];
+
+  for (int i = 1; i < arr.size(); i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+
+  return min;
+}
+```
+13. Stage the changes
+```bash
+git add assignemt.cpp
+```
+14. Commit the changes on the stage
+```bash
+git commit -m "Create getAverage function"
+```
+15. Push the commit to branch `getAverage-feature` on the remote repository
+```bash
+git push -u origin getAverage-feature
+```
+16. Now, we want to merge the branch `getAverage-feature` to the master branch:
+```bash
+git checkout master
+git pull origin master
+git merge getAverage-feature
+git push origin master
 ```
